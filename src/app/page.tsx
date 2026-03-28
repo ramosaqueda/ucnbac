@@ -39,7 +39,7 @@ export default function Home() {
           setEncryptedCreds(data.usuarios);
         }
       })
-      .catch(() => {});
+      .catch(() => { });
   }, []);
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -155,6 +155,7 @@ export default function Home() {
           {/* CTF Info */}
           <div className="bg-white/10 backdrop-blur rounded-lg p-6">
             <h3 className="text-xl font-bold mb-4">Desafio CTF</h3>
+            <h4>Esta página ha sido desarrollada de manera intencionalmente vulnerable, solo con fines Académicos </h4>
             <p className="text-gray-300 mb-4">
               Este sistema contiene <strong>5 banderas (FLAGS)</strong> ocultas.
               Tu mision es encontrarlas explotando vulnerabilidades de control de acceso.
@@ -209,6 +210,6 @@ export default function Home() {
           `,
         }}
       />
-    </div>
+    </div >
   );
 }
