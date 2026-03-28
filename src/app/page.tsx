@@ -147,7 +147,7 @@ export default function Home() {
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-gray-500 mt-3">* Datos protegidos con AES-256-CBC</p>
+                <p className="text-xs text-gray-500 mt-3">* Datos protegidos con AES-128-CBC</p>
               </div>
             )}
           </div>
