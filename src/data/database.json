@@ -1,0 +1,166 @@
+{
+  "flags": {
+    "idor_notas": "FLAG{IDOR_N0T4S_3STUD14NT3S_2024}",
+    "idor_reportes": "FLAG{R3P0RT3S_S1N_AUT0R1Z4C10N}",
+    "idor_documentos": "FLAG{D0CUM3NT0S_C0NF1D3NC14L3S}",
+    "jwt_escalada": "FLAG{JWT_PR1V1L3G3_3SC4L4T10N}",
+    "forced_browse": "FLAG{4DM1N_P4N3L_BYP4SS3D}"
+  },
+  "usuarios": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "nombre": "Administrador Sistema"
+    },
+    {
+      "id": 2,
+      "username": "profesor",
+      "password": "prof2024",
+      "role": "profesor",
+      "nombre": "Dr. Roberto Méndez"
+    },
+    {
+      "id": 3,
+      "username": "estudiante1",
+      "password": "est123",
+      "role": "estudiante",
+      "estudianteId": 1001,
+      "nombre": "María González"
+    },
+    {
+      "id": 4,
+      "username": "estudiante2",
+      "password": "est456",
+      "role": "estudiante",
+      "estudianteId": 1002,
+      "nombre": "Carlos Pérez"
+    },
+    {
+      "id": 5,
+      "username": "estudiante3",
+      "password": "est789",
+      "role": "estudiante",
+      "estudianteId": 1003,
+      "nombre": "Ana Martínez"
+    }
+  ],
+  "estudiantes": [
+    {
+      "id": 1001,
+      "nombre": "María González",
+      "rut": "12.345.678-9",
+      "carrera": "Ingeniería Informática",
+      "semestre": 5,
+      "notas": [
+        {"asignatura": "Programación Avanzada", "nota": 6.5, "semestre": "2024-1"},
+        {"asignatura": "Base de Datos", "nota": 5.8, "semestre": "2024-1"},
+        {"asignatura": "Redes", "nota": 6.2, "semestre": "2024-1"}
+      ],
+      "promedio": 6.17
+    },
+    {
+      "id": 1002,
+      "nombre": "Carlos Pérez",
+      "rut": "11.222.333-4",
+      "carrera": "Ingeniería Civil",
+      "semestre": 3,
+      "notas": [
+        {"asignatura": "Cálculo III", "nota": 4.5, "semestre": "2024-1"},
+        {"asignatura": "Física II", "nota": 5.2, "semestre": "2024-1"},
+        {"asignatura": "Mecánica", "nota": 4.8, "semestre": "2024-1"}
+      ],
+      "promedio": 4.83,
+      "flag_secreto": "FLAG{IDOR_N0T4S_3STUD14NT3S_2024}"
+    },
+    {
+      "id": 1003,
+      "nombre": "Ana Martínez",
+      "rut": "13.444.555-6",
+      "carrera": "Medicina",
+      "semestre": 7,
+      "notas": [
+        {"asignatura": "Anatomía II", "nota": 6.8, "semestre": "2024-1"},
+        {"asignatura": "Fisiología", "nota": 6.5, "semestre": "2024-1"},
+        {"asignatura": "Bioquímica", "nota": 6.9, "semestre": "2024-1"}
+      ],
+      "promedio": 6.73
+    },
+    {
+      "id": 9999,
+      "nombre": "Cuenta de Pruebas Admin",
+      "rut": "99.999.999-9",
+      "carrera": "Sistema",
+      "semestre": 0,
+      "notas": [],
+      "promedio": 0,
+      "flag_admin": "FLAG{IDOR_N0T4S_3STUD14NT3S_2024}",
+      "comentario": "Esta cuenta contiene el flag IDOR de notas"
+    }
+  ],
+  "reportes": [
+    {
+      "id": 1,
+      "titulo": "Reporte Académico Q1 2024",
+      "tipo": "publico",
+      "contenido": "Estadísticas generales del primer trimestre..."
+    },
+    {
+      "id": 2,
+      "titulo": "Informe Disciplinario Confidencial",
+      "tipo": "confidencial",
+      "contenido": "Casos disciplinarios del semestre... FLAG{R3P0RT3S_S1N_AUT0R1Z4C10N}"
+    },
+    {
+      "id": 3,
+      "titulo": "Evaluación Docente Interna",
+      "tipo": "confidencial",
+      "contenido": "Evaluaciones de profesores - documento interno"
+    },
+    {
+      "id": 4,
+      "titulo": "Presupuesto Universidad 2024",
+      "tipo": "confidencial",
+      "contenido": "Detalles financieros confidenciales..."
+    },
+    {
+      "id": 5,
+      "titulo": "FLAG Report - Solo Admin",
+      "tipo": "secreto",
+      "contenido": "Este reporte contiene información sensible. FLAG{R3P0RT3S_S1N_AUT0R1Z4C10N}"
+    }
+  ],
+  "documentos": [
+    {
+      "id": "DOC001",
+      "nombre": "Syllabus Programación 2024",
+      "tipo": "publico",
+      "contenido": "Contenido del syllabus de programación..."
+    },
+    {
+      "id": "DOC002",
+      "nombre": "Examen Final Programación",
+      "tipo": "confidencial",
+      "contenido": "Preguntas del examen final - CONFIDENCIAL"
+    },
+    {
+      "id": "DOC003",
+      "nombre": "Respuestas Examen Final",
+      "tipo": "secreto",
+      "contenido": "RESPUESTAS: 1-A, 2-C, 3-B... FLAG{D0CUM3NT0S_C0NF1D3NC14L3S}"
+    },
+    {
+      "id": "FLAG_DOC",
+      "nombre": "Documento de Flags CTF",
+      "tipo": "secreto",
+      "contenido": "¡Encontraste el documento secreto! FLAG{D0CUM3NT0S_C0NF1D3NC14L3S}"
+    }
+  ],
+  "admin_panel": {
+    "secreto": "FLAG{4DM1N_P4N3L_BYP4SS3D}",
+    "mensaje": "Bienvenido al panel de administración. Has encontrado el flag de forced browsing."
+  },
+  "jwt_secret": "coquimbo2024",
+  "jwt_flag": "FLAG{JWT_PR1V1L3G3_3SC4L4T10N}"
+}
