@@ -4,7 +4,10 @@
     "idor_reportes": "FLAG{R3P0RT3S_S1N_AUT0R1Z4C10N}",
     "idor_documentos": "FLAG{D0CUM3NT0S_C0NF1D3NC14L3S}",
     "jwt_escalada": "FLAG{JWT_PR1V1L3G3_3SC4L4T10N}",
-    "forced_browse": "FLAG{4DM1N_P4N3L_BYP4SS3D}"
+    "forced_browse": "FLAG{4DM1N_P4N3L_BYP4SS3D}",
+    "directory_listing": "FLAG{D1R3CT0RY_L1ST1NG_3XP0S3D}",
+    "xxe_injection": "FLAG{XXE_3NT1D4D_3XT3RN4_CWE611}",
+    "default_credentials": "FLAG{D3F4ULT_CR3DS_M4N4G3R_ADM1N}"
   },
   "usuarios": [
     {

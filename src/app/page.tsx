@@ -155,36 +155,51 @@ export default function Home() {
           {/* CTF Info */}
           <div className="bg-white/10 backdrop-blur rounded-lg p-6">
             <h3 className="text-xl font-bold mb-4">Desafio CTF</h3>
-            <h4>Esta página ha sido desarrollada de manera intencionalmente vulnerable, solo con fines Académicos </h4>
-            <p className="text-gray-300 mb-4">
-              Este sistema contiene <strong>5 banderas (FLAGS)</strong> ocultas.
-              Tu mision es encontrarlas explotando vulnerabilidades de control de acceso.
+            <h4 className="text-sm text-blue-200 mb-3">Esta página ha sido desarrollada de manera intencionalmente vulnerable, solo con fines Academicos</h4>
+            <p className="text-gray-300 mb-4 text-sm">
+              Este sistema contiene <strong>8 banderas (FLAGS)</strong> ocultas.
+              Explotando vulnerabilidades de control de acceso y mala configuracion de seguridad.
             </p>
 
-            <div className="space-y-2 text-sm">
+            <div className="space-y-1 text-xs">
+              <p className="text-gray-400 font-bold uppercase mb-1">A01 - Broken Access Control</p>
               <div className="flex items-center gap-2">
-                <span className="w-6 h-6 bg-red-500/30 rounded flex items-center justify-center text-xs">1</span>
+                <span className="w-5 h-5 bg-red-500/30 rounded flex items-center justify-center text-xs">1</span>
                 <span className="text-gray-300">FLAG de acceso no autorizado a datos</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-6 h-6 bg-orange-500/30 rounded flex items-center justify-center text-xs">2</span>
+                <span className="w-5 h-5 bg-orange-500/30 rounded flex items-center justify-center text-xs">2</span>
                 <span className="text-gray-300">FLAG de informacion confidencial</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-6 h-6 bg-yellow-500/30 rounded flex items-center justify-center text-xs">3</span>
+                <span className="w-5 h-5 bg-yellow-500/30 rounded flex items-center justify-center text-xs">3</span>
                 <span className="text-gray-300">FLAG de documentos restringidos</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-6 h-6 bg-purple-500/30 rounded flex items-center justify-center text-xs">4</span>
-                <span className="text-gray-300">FLAG de escalada de privilegios</span>
+                <span className="w-5 h-5 bg-purple-500/30 rounded flex items-center justify-center text-xs">4</span>
+                <span className="text-gray-300">FLAG de escalada de privilegios JWT</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-6 h-6 bg-pink-500/30 rounded flex items-center justify-center text-xs">5</span>
+                <span className="w-5 h-5 bg-pink-500/30 rounded flex items-center justify-center text-xs">5</span>
                 <span className="text-gray-300">FLAG de acceso administrativo</span>
+              </div>
+
+              <p className="text-gray-400 font-bold uppercase mt-3 mb-1">A02 - Security Misconfiguration</p>
+              <div className="flex items-center gap-2">
+                <span className="w-5 h-5 bg-cyan-500/30 rounded flex items-center justify-center text-xs">6</span>
+                <span className="text-gray-300">FLAG en servidor de archivos expuesto</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-5 h-5 bg-green-500/30 rounded flex items-center justify-center text-xs">7</span>
+                <span className="text-gray-300">FLAG via inyeccion de entidades XML</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="w-5 h-5 bg-rose-500/30 rounded flex items-center justify-center text-xs">8</span>
+                <span className="text-gray-300">FLAG en panel de gestion con credenciales por defecto</span>
               </div>
             </div>
 
-            <div className="mt-6 p-3 bg-black/30 rounded text-sm">
+            <div className="mt-4 p-3 bg-black/30 rounded text-sm">
               <p className="text-yellow-400 font-mono">Formato: FLAG{`{...}`}</p>
             </div>
           </div>
